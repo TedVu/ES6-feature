@@ -10,10 +10,16 @@ class Person {
   }
 
   printNameFunction() {
-    setTimeout(() => {
+    setTimeout(function () {
       console.log("Function : " + this.name);
     }, 100);
   }
 }
 
-alert("Hello World");
+let person = new Person("Ted");
+
+// This in arrow function is where the function is defined
+person.printNameArrow();
+
+// This in normal function is where the function is called
+person.printNameFunction();
