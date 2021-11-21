@@ -21,5 +21,5 @@ let person = new Person("Ted");
 // This in arrow function is where the function is defined
 person.printNameArrow();
 
-// This in normal function is where the function is called
+// This in normal function is where the function is called - redefine this keyword
 person.printNameFunction();
